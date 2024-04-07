@@ -262,3 +262,49 @@ label.content{
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        margin-left: 10px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        margin: 30px 10px;
+    }
+
+    .box {
+        width: calc(50% - 30px);
+        margin: 0 15px 30px;
+    }
+
+    .design {
+        width: 90%;
+        margin: 40px auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .design {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: calc(100% - 30px);
+        margin: 0 15px 30px;
+    }
+}

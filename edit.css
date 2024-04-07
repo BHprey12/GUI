@@ -53,8 +53,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px; /* Adjust width as needed */
-    height: 70px; /* Adjust height as needed */
+    width: 600px;
+    height: 70px; 
     margin: 10;
     margin-left: 200px;
   
@@ -114,3 +114,18 @@ h1{
         border: 1px solid #000;
     }
     
+
+    @media screen and (max-width: 576px) {
+        /* Further adjustments for extra small screens */
+        .big-box {
+            width: 90%; /* Further decrease width */
+        }
+    
+        .sidebar {
+            display: none; /* Hide sidebar for very small screens */
+        }
+    
+        .menu li a {
+            font-size: 18px; /* Decrease font size of menu items for very small screens */
+        }
+    }

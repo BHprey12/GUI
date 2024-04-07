@@ -262,3 +262,26 @@ label.content{
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .container {
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
